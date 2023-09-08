@@ -54,18 +54,18 @@ $(document).ready(function() {
           // Jika elemen sudah terlihat, hilangkan elemen
           macan.animate([
               { transform: 'translateY(0)' },
-              { transform: 'translateY(50%)' }
+              { transform: 'translateY(100%)' }
           ], {
               duration: 1200,
               iterations: 1,
-              easing: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
+              easing: 'ease-in  ',
               fill: 'forwards' // Tahan elemen dalam keadaan akhir animasi
           });
 
       } else {
           // Jika elemen belum terlihat, munculkan elemen
           macan.animate([
-              { transform: 'translateY(50%)' },
+              { transform: 'translateY(100%)' },
               { transform: 'translateY(0)' }
           ], {
               duration: 700,
