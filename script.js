@@ -53,10 +53,12 @@ $(document).ready(function() {
       if (macanVisible) {
           // Jika elemen sudah terlihat, hilangkan elemen
           macan.animate([
-              { transform: 'translateY(0)' },
-              { transform: 'translateY(100%)' }
+              // { transform: 'translateY(0)' },
+              // { transform: 'translateY(100%)' }
+              { opacity: 1, transform: 'scale(1)' },
+              { opacity: 0, transform: 'scale(0.8)' }
           ], {
-              duration: 1200,
+              duration: 200,
               iterations: 1,
               easing: 'ease-in  ',
               fill: 'forwards' // Tahan elemen dalam keadaan akhir animasi
@@ -65,12 +67,14 @@ $(document).ready(function() {
       } else {
           // Jika elemen belum terlihat, munculkan elemen
           macan.animate([
-              { transform: 'translateY(100%)' },
-              { transform: 'translateY(0)' }
+              // { transform: 'translateY(100%)' },
+              // { transform: 'translateY(0)' }
+              { opacity: 0, transform: 'scale(0.8)' },
+              { opacity: 1, transform: 'scale(1)' }
           ], {
-              duration: 700,
+              duration: 200,
               iterations: 1,
-              easing: 'cubic-bezier(0.230, 1.000, 0.320, 1.000)',
+              easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
               fill: 'forwards' // Tahan elemen dalam keadaan akhir animasi
           });
 

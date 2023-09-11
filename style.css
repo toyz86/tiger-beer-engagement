@@ -72,11 +72,12 @@ body {
 }
 
 #macan {
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
   width: 100%;
   position: relative;
   margin: 0 auto;
-  top: 200px;
+  top: 350px;
+  opacity: 0;
   /* left: 50px; */
 }
 
